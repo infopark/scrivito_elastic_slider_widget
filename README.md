@@ -8,9 +8,12 @@ When used with scrivito_sdk version 0.18.1 please make sure you have the followi
 - ObjClass Image (migration, model)
 - ObjClass Widget (migration, model)
 - at least one ObjClass that has a an attribute with type :widget
+Newer versions of the scrivito_sdk already provide some of these things.
 
-## Usage
+Use Bootstrap in your Rails App.
 
-Insert the Widget 'Elastic Slider' and put several 'Image Panels for Elastic Slider' into it. 
-Edit each Panel's Widget Properties to set Image, Headline, Button Text and Button Link as desired or use inline editing.
-Switching into View Mode should show you the Slider in action.
+## Steps for Usage
+
+- Insert the Widget 'Elastic Slider' and put several 'Image Panels for Elastic Slider' into it. 
+- Edit each Panel's Widget Properties to set Image, Headline, Button Text and Button Link or use inline editing.
+- Switching into View Mode should show you the Slider in action.
