@@ -3,6 +3,7 @@ PATH
   specs:
     scrivito_elastic_slider (0.0.1)
       bundler
+      jquery-rails
       scrivito_sdk
 
 GEM

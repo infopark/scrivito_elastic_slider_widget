@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+/* Carousel
+================================================== */
+
+.carousel-inner .item {height:400px;}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img { display: block; height: auto; line-height: 1; min-width: 1200px; width: 100%;}
+.carousel-inner .container {position:static;}
+.carousel-control {width:7%; opacity:.2; @include transition(all .3s ease-in-out); }
+.carousel-control i {font-size:30px; line-height:400px;}
+
+/* Editing-View of Carousel */
+body[data-scrivito-display-mode='editing'] .carousel-inner .item {height:150px;}
+body[data-scrivito-display-mode='editing'] .carousel-inner .item > img {height: 100%; }
+body[data-scrivito-display-mode='editing'] .carousel-inner .item .carousel-caption {bottom: 0; padding: 0;}
+
+
