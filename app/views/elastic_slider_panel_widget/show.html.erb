@@ -4,7 +4,7 @@
     <div class="carousel-caption">
       <%= cms_tag :h1, widget, :headline %>
       <%= cms_tag :p, widget, :main_content %>
-      <% unless widget.button_text.blank? || widget.button_link.blank? %>
+      <% unless widget.button_text.blank? && widget.button_link.blank? %>
         <p>
           <a class="btn btn-lg btn-primary" href="#TODO" role="button">
             <%= display_field widget, :button_text %>
