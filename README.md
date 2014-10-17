@@ -25,6 +25,16 @@ Add this line to your app/assets/stylesheets/application.css:
 
 *= require scrivito_elastic_slider/application
 
+Run
+
+    $ bundle
+    $ rake cms:migrate:install
+    $ rake cms:migrate
+
+Check in your Workspace 'rtc' if you are happy with the results and if so, run
+
+    $ rake cms:migrate:publish
+
 
 ## Steps for Usage
 
