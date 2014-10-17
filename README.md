@@ -23,7 +23,7 @@ Add the gem to your Gemfile:
 
 Add this line to your app/assets/stylesheets/application.css:
 
-*= require scrivito_elastic_slider/application
+    *= require scrivito_elastic_slider/application
 
 Run
 
@@ -31,7 +31,7 @@ Run
     $ rake cms:migrate:install
     $ rake cms:migrate
 
-Check in your Workspace 'rtc' if you are happy with the results and if so, run
+Switch to your Workspace 'rtc' and follow below Stepf for Usage. If you are happy with the outcome run
 
     $ rake cms:migrate:publish
 
