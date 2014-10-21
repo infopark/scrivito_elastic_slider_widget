@@ -19,7 +19,11 @@ Add the gem to your Gemfile:
 
     gem 'scrivito_elastic_slider'
 
-(Currently you need to download the gem files from github and install it locally.)
+Run bundle
+
+    $ bundle
+
+(Currently you need to download the gem's files from github and install it locally.)
 
 Add this line to your app/assets/stylesheets/application.css:
 
@@ -27,7 +31,6 @@ Add this line to your app/assets/stylesheets/application.css:
 
 Run
 
-    $ bundle
     $ rake cms:migrate:install
     $ rake cms:migrate
 
@@ -40,4 +43,5 @@ Switch to your Workspace 'rtc' and follow below Steps for Usage. If you are happ
 
 - Insert the Widget 'Elastic Slider' and put several 'Image Panels for Elastic Slider' into it. 
 - Edit each Panel's Widget Properties to set Image, Headline, Button Text and Button Link or use inline editing.
-- Switching into View Mode should show you the Slider in action.
+- Switch into 'Preview' mode to see the Slider in action.
+
