@@ -11,7 +11,7 @@ When used with scrivito_sdk version 0.18.1 please make sure you have the followi
 
 Newer versions of the scrivito_sdk already provide some of these things.
 
-Use Bootstrap in your Rails App.
+Use Bootstrap 3.2 in your Rails App.
 
 ## Installation
 
@@ -31,7 +31,7 @@ Run
     $ rake cms:migrate:install
     $ rake cms:migrate
 
-Switch to your Workspace 'rtc' and follow below Stepf for Usage. If you are happy with the outcome run
+Switch to your Workspace 'rtc' and follow below Steps for Usage. If you are happy with the outcome run
 
     $ rake cms:migrate:publish
 
