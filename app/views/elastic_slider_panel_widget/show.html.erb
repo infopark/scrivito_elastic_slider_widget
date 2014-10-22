@@ -1,9 +1,9 @@
 <div class="item <%= widget.additional_classes(params) %>">
-  <%= cms_image_tag widget, :image_source %>
+  <%= cms_image_tag widget, :image %>
   <div class="container">
     <div class="carousel-caption">
       <%= cms_tag :h1, widget, :headline %>
-      <%= cms_tag :p, widget, :main_content %>
+      <%= cms_tag :p, widget, :content %>
       <% unless widget.button_text.blank? || widget.button_link.blank? %>
         <p>
           <%= link_to cms_path(widget.button_link), class: "btn btn-lg btn-primary", role: "button" do %>
