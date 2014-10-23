@@ -4,11 +4,9 @@
     <div class="carousel-caption">
       <%= cms_tag :h1, widget, :headline %>
       <%= cms_tag :p, widget, :content %>
-      <% unless widget.button_text.blank? || widget.button_link.blank? %>
+      <% unless widget.button.blank? %>
         <p>
-          <%= link_to cms_path(widget.button_link), class: "btn btn-lg btn-primary", role: "button" do %>
-            <%= display_field widget, :button_text %>
-          <% end %>
+          <%= link_to widget.button.title, cms_path(widget.button), class: "btn btn-lg btn-primary", role: "button" %>
         </p>
       <% end %>
     </div>
