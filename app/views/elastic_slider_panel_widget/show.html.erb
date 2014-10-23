@@ -3,12 +3,14 @@
   <div class="container">
     <div class="carousel-caption">
       <%= cms_tag :h1, widget, :headline %>
-      <%= cms_tag :p, widget, :content %>
-      <% unless widget.button.blank? %>
-        <p>
-          <%= link_to widget.button.title, cms_path(widget.button), class: "btn btn-lg btn-primary", role: "button" %>
-        </p>
-      <% end %>
+      <div class="content">
+        <%= cms_tag :p, widget, :content %>
+        <% unless widget.button.blank? %>
+          <p>
+            <%= link_to widget.button.title, cms_path(widget.button), class: "btn btn-lg btn-primary", role: "button" %>
+          </p>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
