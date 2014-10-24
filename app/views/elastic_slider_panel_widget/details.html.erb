@@ -1,15 +1,15 @@
 <div class="details-view">
 
   <h4>Background Image</h4>
-  <%= cms_image_tag(widget, :image, data: { filter: 'images' }) %>
+  <%= scrivito_image_tag(widget, :image, data: { filter: 'images' }) %>
 
   <h4>Headline</h4>
-  <%= cms_tag(:div, widget, :headline) %>
+  <%= scrivito_tag(:div, widget, :headline) %>
 
   <h4>Text</h4>
-  <%= cms_tag(:div, widget, :main_content) %>
+  <%= scrivito_tag(:div, widget, :content) %>
 
   <h4>Button</h4>
-  <%= cms_edit_link(widget, :button, data: {placeholder: "Where should the button take the user ..."}) %>
+  <%= scrivito_edit_link(widget, :button, data: {placeholder: "Where should the button take the user ..."}) %>
 
 </div>

@@ -31,12 +31,12 @@ Add this line to your app/assets/stylesheets/application.css:
 
 Run
 
-    $ rake cms:migrate:install
-    $ rake cms:migrate
+    $ rake scrivito:migrate:install
+    $ rake scrivito:migrate
 
 Switch to your Workspace 'rtc' and follow below Steps for Usage. If you are happy with the outcome run
 
-    $ rake cms:migrate:publish
+    $ rake scrivito:migrate:publish
 
 
 ## Steps for Usage

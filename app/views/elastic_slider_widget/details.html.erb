@@ -5,16 +5,16 @@
   <% end %>
   <div class="row">
     <div class="col-md-4">
-      <%= cms_image_tag(panel, :image, style: "max-height: 100px; max-width: 250px; margin-bottom: 1em;") %>
+      <%= scrivito_image_tag(panel, :image, style: "max-height: 100px; max-width: 250px; margin-bottom: 1em;") %>
     </div>
     <div class="col-md-3">
       <h4>Headline</h4>
-      <%= cms_tag(:p, panel, :headline) %>
+      <%= scrivito_tag(:p, panel, :headline) %>
     </div>
     <div class="col-md-5">
       <h4>Text</h4>
-      <%= cms_tag(:p, panel, :content) %>
+      <%= scrivito_tag(:p, panel, :content) %>
     </div>
   </div>
-  <%= cms_edit_link(panel, :button, data: {placeholder: "Where should the button take the user ..."}) %>
+  <%= scrivito_edit_link(panel, :button, data: {placeholder: "Where should the button take the user ..."}) %>
 <% end %>
