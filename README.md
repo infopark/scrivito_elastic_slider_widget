@@ -4,20 +4,13 @@ This Gem adds an Elastic Slider Widget to [Scrivito](http://scrivito.com).
 
 ## Prerequisites
 
-When used with scrivito_sdk version 0.18.1 please make sure you have the following in your App already:
-- ObjClass Image (migration, model)
-- ObjClass Widget (migration, model)
-- at least one ObjClass that has a an attribute with type :widget
-
-Newer versions of the scrivito_sdk already provide some of these things.
-
 Use Bootstrap 3.2 in your Rails App.
 
 ## Installation
 
 Add the gem to your Gemfile:
 
-    gem 'scrivito_elastic_slider'
+    gem 'scrivito_elastic_slider_widget'
 
 Run bundle
 
@@ -27,7 +20,7 @@ Run bundle
 
 Add this line to your app/assets/stylesheets/application.css:
 
-    *= require scrivito_elastic_slider/application
+    *= require scrivito_elastic_slider_widget/application
 
 Run
 
