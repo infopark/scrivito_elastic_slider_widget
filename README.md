@@ -16,8 +16,6 @@ Run bundle
 
     $ bundle
 
-(Currently you need to download the gem's files from github and install it locally.)
-
 Add this line to your app/assets/stylesheets/application.css:
 
     *= require scrivito_elastic_slider_widget/application
