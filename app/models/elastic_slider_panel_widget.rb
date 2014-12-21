@@ -6,5 +6,9 @@ class ElasticSliderPanelWidget < Widget
     rescue
     end
   end
-  
+
+  def description_for_editor
+    "Elastic Slider Panel"
+  end
+
 end

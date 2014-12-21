@@ -20,6 +20,10 @@ Add this line to your app/assets/stylesheets/application.css:
 
     *= require scrivito_elastic_slider_widget/application
 
+Add this line to your app/assets/stylesheets/editing.css:
+
+    *= require scrivito_elastic_slider_widget/editing
+
 Run
 
     $ rake scrivito:migrate:install
