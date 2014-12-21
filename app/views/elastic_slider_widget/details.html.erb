@@ -1,4 +1,5 @@
-<div class="details-view" data-scrivito-modal-size="large">
+<!-- leaving the first part in because I may have to rewrite this -->
+<!-- div class="details-view" data-scrivito-modal-size="large">
   <% widget.panels.each_with_index do |panel, index| %>
     <% unless index == 0 %>
       <hr />
@@ -18,4 +19,8 @@
     </div>
     <%= scrivito_edit_link(panel, :button, data: {placeholder: "Where should the button take the user ..."}) %>
   <% end %>
+</div -->
+
+<div class="details-view" data-scrivito-modal-size="large">
+  <%= scrivito_tag :div, widget, :panels %>
 </div>
