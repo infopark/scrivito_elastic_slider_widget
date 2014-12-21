@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "Allows inserting an Elastic Slider with image panels and text above.."
   s.license     = "LGPL-3.0"
 
-  s.files = Dir["{app,lib,scrivito}/**/*", "LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,config,lib,scrivito}/**/*", "LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "bundler"
   s.add_dependency "scrivito"

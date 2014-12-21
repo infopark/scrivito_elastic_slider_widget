@@ -1,5 +1,8 @@
 <!-- Carousel -->
 <div id="carousel<%= widget.id %>" class="carousel slide" data-ride="carousel">
+  <% if scrivito_in_editable_view? %>
+    <%= link_to "Add new Panel", "#", widgetid: widget.id, class: "scrivito_elastic_slider_widget_add-new-panel" %>
+  <% end %>
   <ol class="carousel-indicators">
     <% (0..widget.panels.size-1).each do |index| %>
       <li data-target="#carousel<%= widget.id %>" data-slide-to="<%= index %>" <% if index == 0 %>class="active"<% end %>></li>

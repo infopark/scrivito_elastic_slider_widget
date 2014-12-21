@@ -1,3 +1,4 @@
 /* Editing styles for the Elastic Slider */
-body[data-scrivito-display-mode='editing'] .carousel-inner {padding-top: 30px;}
+body[data-scrivito-display-mode='editing'] .carousel {padding-top: 30px;}
+.scrivito_elastic_slider_widget_add-new-panel {background-color: #439439; color: white; display: block; padding: 0 5px; position: absolute; right: 120px; top: 0;}
 
