@@ -1,11 +1,24 @@
-/* Editing styles for the Elastic Slider */
-
-/* basic display settings */
-
-body[data-scrivito-display-mode='editing'] .carousel {padding-top: 30px;}
-
 /* additional tools */
-.scrivito_elastic_slider_widget_add-new-panel {background-color: #439439; color: white; display: block; padding: 0 5px; position: absolute; right: 120px; top: 0;}
+.scrivito_elastic_slider_widget_add-new-panel {
+  background-color: #33312d;
+  color: white;
+  display: block;
+  padding: 5px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+  width: auto;
+  height: 24px;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.scrivito_elastic_slider_widget_add-new-panel * {
+  margin-right: 5px;
+}
 
 /* Details view */
 .details-view .item {display: block; height: 100px; margin-bottom: 10px; overflow: hidden;} 
