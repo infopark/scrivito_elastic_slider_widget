@@ -1,4 +1,8 @@
 class ElasticSliderPanelWidget < Widget
+  attribute :button, :link
+  attribute :content, :string
+  attribute :headline, :string
+  attribute :image, :reference
 
   def additional_classes(params)
     begin
@@ -9,6 +13,10 @@ class ElasticSliderPanelWidget < Widget
 
   def description_for_editor
     "Elastic Slider Panel"
+  end
+
+  def self.valid_container_classes
+    [ElasticSliderWidget]
   end
 
 end
