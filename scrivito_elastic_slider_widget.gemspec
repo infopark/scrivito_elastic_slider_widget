@@ -11,12 +11,12 @@ Gem::Specification.new do |s|
   s.email       = ["support@scrivito.com"]
   s.homepage    = "https://www.scrivito.com"
   s.summary     = "A Widget for Scrivito delivering an Elastic Slider."
-  s.description = "Allows inserting an Elastic Slider with image panels and text above.."
+  s.description = "Allows inserting an Elastic Slider with image panels and text."
   s.license     = "LGPL-3.0"
 
   s.files = Dir["{app,config,lib,scrivito}/**/*", "LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "bundler"
-  s.add_dependency "scrivito"
-  s.add_dependency "jquery-rails"
+  s.add_dependency "bundler", '> 0'
+  s.add_dependency "scrivito", '~> 0.65.0'
+  s.add_dependency "jquery-rails", '> 0'
 end

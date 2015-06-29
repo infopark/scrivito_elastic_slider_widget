@@ -1,15 +1,22 @@
-<div class="details-view">
+<div class="scrivito-tab-title-details">
+  <%= scrivito_tag(:h4, widget, :headline) %>
+  <%= link_to '(details)', '#', 'data-scrivito-tab-toggle-details' => widget.id %>
+  <div class="scrivito-tab-details-<%= widget.id %>">
+    <div>
+      <strong>Background Image</strong>
+      <div class="row">
+        <div class="col-xs-4">
+          <%= scrivito_image_tag(widget, :image, data: { filter: 'images' }) %>
+        </div>
 
-  <h4>Background Image</h4>
-  <%= scrivito_image_tag(widget, :image, data: { filter: 'images' }) %>
+        <div class="col-xs-8">
+          <strong>Text</strong>
+          <%= scrivito_tag(:div, widget, :content) %>
 
-  <h4>Headline</h4>
-  <%= scrivito_tag(:div, widget, :headline) %>
-
-  <h4>Text</h4>
-  <%= scrivito_tag(:div, widget, :content) %>
-
-  <h4>Button</h4>
-  <%= scrivito_edit_link(widget, :button, data: {placeholder: "Where should the button take the user ..."}) %>
-
+          <strong>Button</strong>
+          <%= scrivito_edit_link(widget, :button, data: {placeholder: "Where should the button take the user ..."}) %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

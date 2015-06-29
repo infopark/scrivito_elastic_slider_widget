@@ -1,26 +1,5 @@
-<!-- leaving the first part in because I may have to rewrite this -->
-<!-- div class="details-view" data-scrivito-modal-size="large">
-  <% widget.panels.each_with_index do |panel, index| %>
-    <% unless index == 0 %>
-      <hr />
-    <% end %>
-    <div class="row">
-      <div class="col-md-4">
-        <%= scrivito_image_tag(panel, :image, style: "max-height: 100px; max-width: 250px; margin-bottom: 1em;") %>
-      </div>
-      <div class="col-md-3">
-        <h4>Headline</h4>
-        <%= scrivito_tag(:p, panel, :headline) %>
-      </div>
-      <div class="col-md-5">
-        <h4>Text</h4>
-        <%= scrivito_tag(:p, panel, :content) %>
-      </div>
-    </div>
-    <%= scrivito_edit_link(panel, :button, data: {placeholder: "Where should the button take the user ..."}) %>
-  <% end %>
-</div -->
-
 <div class="details-view" data-scrivito-modal-size="large">
-  <%= scrivito_tag :div, widget, :panels %>
+  <%= scrivito_details_for do %>
+    <%= scrivito_tag :div, widget, :panels, 'data-scrivito-modal-size' => 'large' %>
+  <% end %>
 </div>
