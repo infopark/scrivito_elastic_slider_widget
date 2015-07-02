@@ -18,5 +18,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency "bundler", '> 0'
   s.add_dependency "scrivito", '~> 0.65.0'
+  s.add_dependency "scrivito_advanced_editors"
   s.add_dependency "jquery-rails", '> 0'
 end
