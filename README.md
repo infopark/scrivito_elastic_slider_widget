@@ -12,35 +12,11 @@ Add the gem to your Gemfile:
 
     gem 'scrivito_elastic_slider_widget'
 
-Run bundle
+Add this line to your application Stylesheet manifest:
 
-    $ bundle
+    *= require scrivito_elastic_slider_widget
 
-Add this line to your app/assets/stylesheets/application.css:
+Add this line to your editing Stylesheet manifest:
 
-    *= require scrivito_elastic_slider_widget/application
-
-Add this line to your app/assets/stylesheets/editing.css:
-
-    *= require scrivito_elastic_slider_widget/editing
-
-Add this line to your app/assets/javascripts/editing.js:
-
-    // require scrivito_elastic_slider_widget/editing
-
-Run
-
-    $ rake scrivito:migrate:install
-    $ rake scrivito:migrate
-
-Switch to your Workspace 'rtc' and follow below Steps for Usage. If you are happy with the outcome run
-
-    $ rake scrivito:migrate:publish
-
-
-## Steps for Usage
-
-- Insert the Widget 'Elastic Slider' and put several 'Image Panels for Elastic Slider' into it. 
-- Edit each Panel's Widget Properties to set Image, Headline, Button Text and Button Link or use inline editing.
-- Switch into 'Preview' mode to see the Slider in action.
+    //= require scrivito_elastic_slider_widget
 
