@@ -1,0 +1,68 @@
+/* additional tools */
+
+.scrivito_elastic_slider_widget_add-new-panel {
+  background-color: #33312d;
+  color: white;
+  display: block;
+  padding: 5px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+  width: auto;
+  height: 24px;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  cursor: pointer;
+  * {
+    margin-right: 5px;
+  }
+}
+
+/* Details view */
+
+.details-view .item {
+  display: block;
+  height: 100px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  img {
+    clear: left;
+    max-height: 100%;
+    float: left;
+    width: 20%;
+  }
+  .container {
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+  }
+  .carousel-caption {
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    position: relative;
+    h1 {
+      font-size: 16px;
+      min-height: 25px;
+      padding: 0 20px;
+      text-align: left;
+      width: 80%;
+    }
+    .content {
+      float: left;
+      max-width: 80%;
+      padding: 0 0 0 20px;
+      p {
+        float: left;
+        font-size: 14px;
+        padding: 0 8px 0 0;
+        a {
+          font-size: 14px;
+          padding: 2px 8px;
+        }
+      }
+    }
+  }
+}
