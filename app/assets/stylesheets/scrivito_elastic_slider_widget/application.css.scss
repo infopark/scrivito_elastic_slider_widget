@@ -1,0 +1,31 @@
+/* scrivito_elastic_slider_widget
+=================================================================== */
+.scrivito-elastic-slider-widget {
+  .carousel-inner {
+    .item {
+      height: 400px;
+      > {
+        img, a > img {
+          display: block;
+          height: auto;
+          line-height: 1;
+          min-width: 1200px;
+          width: 100%;
+        }
+      }
+    }
+    .container {
+      position: static;
+    }
+  }
+
+  .carousel-control {
+    width: 7%;
+    opacity: .2;
+    /* @include transition(all .3s ease-in-out); */
+    i {
+      font-size: 30px;
+      line-height: 400px;
+    }
+  }
+}
