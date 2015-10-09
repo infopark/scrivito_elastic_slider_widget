@@ -15,8 +15,3 @@ Add the gem to your Gemfile:
 Add this line to your application Stylesheet manifest:
 
     *= require scrivito_elastic_slider_widget
-
-Add this line to your editing Stylesheet manifest:
-
-    //= require scrivito_elastic_slider_widget
-
