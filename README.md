@@ -15,3 +15,17 @@ Add the gem to your Gemfile:
 Add this line to your application Stylesheet manifest:
 
     *= require scrivito_elastic_slider_widget
+
+Add a Filter to your content_browser
+
+    scrivito.content_browser.filters = {
+      obj_class: {
+        field: '_obj_class',
+        options: {
+          Quote: {
+            title: 'Images',
+            icon: 'image'
+          }
+        }
+      }
+    };
