@@ -16,7 +16,17 @@ Add this line to your application Stylesheet manifest:
 
     *= require scrivito_elastic_slider_widget
 
-Add this line to your editing Stylesheet manifest:
+Add a Filter to your content_browser
 
-    //= require scrivito_elastic_slider_widget
-
+    scrivito.content_browser.filters = {
+      obj_class: {
+        field: '_obj_class',
+        options: {
+          Image: {
+            title: 'Images',
+            icon: 'image'
+          }
+        }
+      }
+    };
+If you want to implement a Contextual filter, visit our [Documentation](https://scrivito.com/content-browser)!
