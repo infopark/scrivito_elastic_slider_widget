@@ -22,10 +22,11 @@ Add a Filter to your content_browser
       obj_class: {
         field: '_obj_class',
         options: {
-          Quote: {
+          Image: {
             title: 'Images',
             icon: 'image'
           }
         }
       }
     };
+If you want to implement a Contextual filter, visit our [Documentation](https://scrivito.com/content-browser)!
