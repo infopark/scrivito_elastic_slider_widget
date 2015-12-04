@@ -4,4 +4,3 @@
 .carousel-inner .container {position:static;}
 .carousel-control {width:7%; opacity:.2; /* @include transition(all .3s ease-in-out); */ }
 .carousel-control i {font-size:30px; line-height:400px;}
-
