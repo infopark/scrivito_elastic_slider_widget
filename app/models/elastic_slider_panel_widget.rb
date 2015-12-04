@@ -1,8 +1,6 @@
 class ElasticSliderPanelWidget < Widget
-  attribute :button, :link
-  attribute :content, :string
-  attribute :headline, :string
   attribute :image, :reference
+  attribute :panel_content, :widgetlist
 
   def additional_classes(params)
     begin

@@ -2,14 +2,8 @@
   <%= scrivito_image_tag widget, :image %>
   <div class="container">
     <div class="carousel-caption">
-      <%= scrivito_tag :h1, widget, :headline %>
       <div class="content">
-        <%= scrivito_tag :p, widget, :content %>
-        <% unless widget.button.blank? %>
-          <p>
-            <%= link_to widget.button.title, scrivito_path(widget.button), class: "btn btn-lg btn-primary", role: "button" %>
-          </p>
-        <% end %>
+        <%= scrivito_tag :div, widget, :panel_content %>
       </div>
     </div>
   </div>
