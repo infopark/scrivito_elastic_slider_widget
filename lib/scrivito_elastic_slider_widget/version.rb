@@ -1,3 +1,3 @@
 module ScrivitoElasticSliderWidget
-  VERSION = "0.66.0.1"
+  VERSION = "0.90.0"
 end
