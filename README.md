@@ -1,22 +1,21 @@
 # Scrivito Elastic Slider
 
-This Gem adds an Elastic Slider Widget to [Scrivito](http://scrivito.com).
+A Scrivito widget to add a fullscreen slider depending on bootstrap.
 
 ## Prerequisites
 
-Use Bootstrap 3.2 in your Rails App.
+This widget requires bootstrap 3.
 
 ## Installation
 
-Add the gem to your Gemfile:
+Add this line to your application's Gemfile:
 
     gem 'scrivito_elastic_slider_widget'
 
-Add this line to your application Stylesheet manifest:
+Add this line to your application stylesheet manifest:
 
     *= require scrivito_elastic_slider_widget
 
-Add this line to your editing Stylesheet manifest:
+## Better details view
 
-    //= require scrivito_elastic_slider_widget
-
+The details view of the elastic slider widget uses [Scrivito Advanced Editors](https://github.com/Scrivito/scrivito_advanced_editors) accordion feature. You can add this gem to your Gemfile to activate it.
