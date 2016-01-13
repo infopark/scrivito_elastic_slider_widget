@@ -3,8 +3,8 @@ class ElasticSliderWidget < Widget
 
   default_for :panels do |attributes|
     [
-      ElasticSliderPanelWidget.new(),
-      ElasticSliderPanelWidget.new()
+      ElasticSliderPanelWidget.new,
+      ElasticSliderPanelWidget.new
     ]
   end
 

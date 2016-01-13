@@ -1,6 +1,6 @@
-.carousel-inner .item {height:400px;}
-.carousel-inner .item > img,
-.carousel-inner .item > a > img { display: block; height: auto; line-height: 1; min-width: 1200px; width: 100%;}
-.carousel-inner .container {position:static;}
-.carousel-control {width:7%; opacity:.2; /* @include transition(all .3s ease-in-out); */ }
-.carousel-control i {font-size:30px; line-height:400px;}
+.elastic-slider .carousel-inner .item {height:400px;}
+.elastic-slider .carousel-inner .item > img,
+.elastic-slider .carousel-inner .item > a > img { display: block; height: auto; line-height: 1; min-width: 1200px; width: 100%;}
+.elastic-slider .carousel-inner .container {position:static;}
+.elastic-slider .carousel-control {width:7%; opacity:.2; /* @include transition(all .3s ease-in-out); */ }
+.elastic-slider .carousel-control i {font-size:30px; line-height:400px;}
