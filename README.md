@@ -18,7 +18,7 @@ Add this line to your application stylesheet manifest:
 
 ## Localization
 
-The following code shows the default localization for english. Copy it to your `en.yml` and change it if necessary:
+The following code represents the default localization for English. Copy it to your `en.yml` and change it if necessary:
 
 ```yaml
 en:
