@@ -1,9 +1,4 @@
-<div class="scrivito-title-details">
-  <h4>Panel</h4>
-  <%= link_to '(details)', '#', 'data-scrivito-toggle-details' => widget.id %>
-
-  <div class="scrivito-details-<%= widget.id %>">
-    <h4>Background Image</h4>
-    <%= scrivito_image_tag(widget, :image, data: { filter: 'images' }) %>
-  </div>
-</div>
+<%= scrivito_details_for do %>
+  <h4><%= t('scrivito_elastic_slider_widget.details.background_image', default: 'Background Image') %></h4>
+  <%= scrivito_image_tag(widget, :image, data: { filter_context: 'images' }) %>
+<% end %>
