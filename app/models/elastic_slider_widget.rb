@@ -1,5 +1,6 @@
 class ElasticSliderWidget < Widget
   attribute :panels, :widgetlist
+  attribute :height, :string, default: '300px'
 
   default_for :panels do |attributes|
     [
@@ -16,4 +17,7 @@ class ElasticSliderWidget < Widget
     "Elastic Slider"
   end
 
+  def slider_height
+    height.presence || '300px'
+  end
 end

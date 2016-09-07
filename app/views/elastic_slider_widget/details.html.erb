@@ -1,3 +1,8 @@
 <%= scrivito_large_dialog do %>
+  <%= scrivito_details_for '' do %>
+    <%= scrivito_tag :div, widget, :height, data: {toggle_button_list: ['200px','300px','400px','500px', '50vh', '100vh'], toggle_button_caption: {'200px': 'small', '300px': 'default', '400px': 'large', '500px': 'extra large', '50vh': 'half screen', '100vh': 'full screen'}} %>
+  <% end %>
+
+  <h3>Panels</h3>
   <%= scrivito_tag :div, widget, :panels %>
 <% end %>
