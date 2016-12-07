@@ -12,10 +12,6 @@ Add this line to your application's Gemfile:
 
     gem 'scrivito_elastic_slider_widget'
 
-Add this line to your application stylesheet manifest:
-
-    *= require scrivito_elastic_slider_widget
-
 ## Localization
 
 The following code represents the default localization for English. Copy it to your `en.yml` and change it if necessary:
