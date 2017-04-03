@@ -1,5 +1,22 @@
 <div class="item <%= widget.additional_classes(params) %>">
-  <%= scrivito_image_tag widget, :image %>
+  <picture>
+    <source media='(max-width: 400px) and (orientation: portrait)'
+     sizes='100vw'
+     srcset='<%= widget.image.binary.transform(width: 400, height: widget.height, fit: :crop, crop: :center).url %>'>
+
+    <source media='(max-width: 768px)'
+     sizes='100vw'
+     srcset='<%= widget.image.binary.transform(width: 768, height: widget.height, fit: :crop, crop: :center).url %>'>
+
+    <source media='(min-width: 668px) and (max-width: 991px)'
+      sizes='100vw'
+      srcset='<%= widget.transform_for_desktop(991).url %>'>
+
+    <source media='(min-width: 991px) and (max-width: 1200px)'
+      sizes='100vw'
+      srcset='<%= widget.transform_for_desktop(1200).url %>'>
+    <%= scrivito_image_tag widget, :image, {class: 'img-responsive'}, transform: widget.fallback_transform %>
+  </picture>
   <div class="carousel-caption">
     <div class="content">
       <%= scrivito_tag :div, widget, :panel_content %>
