@@ -1,6 +1,6 @@
 # ScrivitoElasticSlider
 
-A Scrivito widget for adding a fullscreen slider based on Bootstrap.
+A Scrivito widget for adding a fullscreen slider based on Bootstrap. Instead of an image tag as Background, a picture tag is used. The image versions will be generated automatically with the scrivito transform and using the height of the widget.
 
 ## Prerequisites
 

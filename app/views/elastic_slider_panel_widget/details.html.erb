@@ -1,4 +1,4 @@
 <%= scrivito_details_for do %>
   <h4><%= t('scrivito_elastic_slider_widget.details.background_image', default: 'Background Image') %></h4>
-  <%= scrivito_image_tag(widget, :image, data: { filter_context: 'images' }) %>
+  <%= scrivito_image_tag(widget, :image, data: { scrivito_editors_filter_context: {_images: true} }) %>
 <% end %>
