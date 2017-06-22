@@ -1,6 +1,7 @@
 class ElasticSliderWidget < Widget
   attribute :panels, :widgetlist
   attribute :height, :string, default: '300px'
+  attribute :interval, :integer, default: 5000
 
   default_for :panels do |attributes|
     [
@@ -19,5 +20,10 @@ class ElasticSliderWidget < Widget
 
   def slider_height
     height.presence || '300px'
+  end
+
+  def _interval(in_editable_view)
+    return false if in_editable_view
+    (interval || 0).zero? ? 5000 : interval
   end
 end

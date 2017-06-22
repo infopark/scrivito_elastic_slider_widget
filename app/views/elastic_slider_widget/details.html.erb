@@ -1,8 +1,28 @@
 <%= scrivito_large_dialog do %>
-  <%= scrivito_details_for '' do %>
-    <%= scrivito_tag :div, widget, :height, data: {toggle_button_list: ['200px','300px','400px','500px', '50vh', '100vh'], toggle_button_caption: {'200px': 'small', '300px': 'default', '400px': 'large', '500px': 'extra large', '50vh': 'half screen', '100vh': 'full screen'}} %>
+  <%= scrivito_details_for 'Height' do %>
+    <%= scrivito_tag :div, widget, :height, data: {
+      toggle_button_list: ['200px','300px','400px','500px', '50vh', '100vh'],
+      toggle_button_caption: {
+        '200px': 'small',
+        '300px': 'default',
+        '400px': 'large',
+        '500px': 'extra large',
+        '50vh': 'half screen',
+        '100vh': 'full screen'
+      }
+    } %>
   <% end %>
 
-  <h3>Panels</h3>
-  <%= scrivito_tag :div, widget, :panels %>
+  <%= scrivito_details_for "Interval" do %>
+    <%= scrivito_tag(:div, widget, :interval, data: {
+      scrivito_editors_min: 1000,
+      scrivito_editors_max: 10000,
+      scrivito_editors_step: 1,
+      scrivito_editors_allow_delete: false,
+    }) %>
+  <% end %>
+
+  <%= scrivito_details_for "Panels" do %>
+    <%= scrivito_tag :div, widget, :panels %>
+  <% end %>
 <% end %>
