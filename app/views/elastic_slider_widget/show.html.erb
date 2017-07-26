@@ -5,7 +5,7 @@
         <li data-target="#carousel<%= widget.id %>" data-slide-to="<%= index %>" <% if index == 0 %>class="active"<% end %>></li>
       <% end %>
     </ol>
-    <div class="carousel-inner" style="height: <%= widget.slider_height %>">
+    <div class="carousel-inner" style="height: <%= widget.slider_height %>; max-height: <%= widget.slider_height %>">
       <% widget.panels.each do |panel| %>
         <%= render template: 'elastic_slider_panel_widget/show', locals: {widget: panel} %>
       <% end %>
