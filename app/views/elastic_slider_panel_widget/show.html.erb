@@ -18,7 +18,9 @@
         srcset='<%= widget.transform_for_desktop(1200).url %>'>
 
       <% end %>
-      <%= scrivito_image_tag widget, :image, {class: 'img-responsive'}, transform: widget.fallback_transform %>
+      <% if widget.image || scrivito_in_editable_view? %>
+        <%= scrivito_image_tag widget, :image, {class: 'img-responsive'}, transform: widget.fallback_transform %>
+      <% end %>
     </picture>
   <div class="carousel-caption">
     <div class="content">
